@@ -1,0 +1,45 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  color: var(--white);
+  line-height: 1.6;
+  margin: 0 5px;
+}
+
+.tournament-winner-detail {
+  padding: 30px;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.winner-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.main-logo {
+  width: 100px;
+  height: auto;
+}
+
+.other-teams .logos {
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logos{
+    display: flex;
+}
+.other-teams img {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tournament-bracket img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
