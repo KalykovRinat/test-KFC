@@ -1,6 +1,6 @@
   body {
   font-family: 'Rubik', sans-serif;
-  background: url(/news.jpg) ;
+  background: url(../Photo/news.jpg) ;
   background-size: cover;
   background-attachment: fixed;
   color: white;

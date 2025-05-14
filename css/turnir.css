@@ -7,7 +7,7 @@
 --blac-t: #101212 ;
 }
 body{
-  background: url(/stat.jpg);
+  background: url(../Photo/stat.jpg);
   background-attachment: fixed;
   background-size: cover;
   font-family: 'Rubik', sans-serif;
