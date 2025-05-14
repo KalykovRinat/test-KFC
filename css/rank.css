@@ -1,4 +1,10 @@
-  body {
+  
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
   font-family: 'Rubik', sans-serif;
   background: url(../Photo/news.jpg) ;
   background-size: cover;

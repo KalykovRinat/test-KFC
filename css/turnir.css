@@ -6,6 +6,11 @@
 --blue: #4388a5cf;
 --blac-t: #101212 ;
 }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 body{
   background: url(../Photo/stat.jpg);
   background-attachment: fixed;
