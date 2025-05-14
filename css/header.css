@@ -331,62 +331,19 @@ footer .social-icons img:hover {
 .footer-sponsors img:hover {
   filter: grayscale(0%);
 }
+.footer-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 @media (max-width: 768px) {
   .footer-logo img {
     width: 40px;
   }
 }
-/* 🔧 Планшеты: от 769px до 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  footer .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
 
-  footer .footer-links {
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-
-  footer .footer-contact {
-    text-align: center;
-  }
-
-  footer .footer-logo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  footer .footer-logo img {
-    width: 50px;
-  }
-
-  .social-icons img {
-    width: 40px;
-  }
-    .footer-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-links {
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .footer-sponsors {
-    justify-content: center;
-    margin-top: 1rem;
-  }
-}
-
-/* 📱 Мобильные устройства: до 480px */
-@media (max-width: 480px) {
+@media (max-width: 760px) {
   footer .footer-logo span {
     font-size: 1rem;
   }
