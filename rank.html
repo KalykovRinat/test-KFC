@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейтинг - KCF</title>
+    <link rel="icon" href="KCF-logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/rank.css">
+    <link rel="stylesheet" href="css/turnir.css">
+</head>
+<body>
+<header class="main-header">
+  <img src="Photo/KCF-logo.jpg" alt="">
+  <div class="header-container">
+   
+  <nav class="navbar">
+    <a href="main.html">Главная</a>
+    <a href="news.html">Новости</a>
+    <a href="turnir.html">Турниры</a>
+    <a href="about.html">О нас</a>
+  </nav>
+
+  <button class="burger" aria-label="Открыть меню">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  </div>
+</header>  
+
+<!-- Рейтинг -->
+<section class="rating-section">
+<div class="rating-header">
+  <button id="game-selector" class="game-selector">
+    <span id="selected-game">PUBG</span> <span class="arrow">&#9662;</span>
+  </button>
+  <ul id="game-dropdown" class="game-dropdown hidden">
+    <li data-game="PUBG">PUBG</li>
+    <li data-game="Mobile Legends">Mobile Legends</li>
+    <li data-game="Honor of Kings">Honor of Kings</li>
+    <li data-game="Clash Royale">Clash Royale</li>
+    <li data-game="Standoff">Standoff</li>
+    <li data-game="Minecraft">Minecraft</li>
+    <li data-game="Call of Duty">Call of Duty</li>
+  </ul>
+</div>
+
+ 
+  <!-- Таблицы -->
+  <div class="tables-container">
+    <h2>Рейтинг команд</h2>
+    <div class="table-wrapper">
+      <table class="team-table">
+        <thead>
+          <tr>
+            <th>№</th><th>Название команды</th><th>Игр</th><th>Победы</th><th>Трофеи</th><th>Состав</th><th>Очки</th>
+          </tr>
+        </thead>
+        <tbody id="team-body">
+          <!-- JS сгенерирует строки -->
+        </tbody>
+      </table>
+    </div>
+    <h2>Рейтинг игроков</h2>
+    <div class="table-wrapper">
+      <table class="player-table">
+        <thead>
+          <tr>
+            <th>№</th><th>Никнейм</th><th>Команда</th><th>КДА</th><th>MVP</th><th>Очки</th>
+          </tr>
+        </thead>
+        <tbody id="player-body">
+          <!-- JS сгенерирует строки -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="past-tournaments">
+  <h2>Прошедшие турниры</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterTournaments('all')">Все</button>
+    <button onclick="filterTournaments('pubg')">Pubg Mobile</button>
+    <button onclick="filterTournaments('mlbb')">Mobile Legends</button>
+    <button onclick="filterTournaments('hok')">Honor of Kings</button>
+    <button onclick="filterTournaments('cod')">Call of Duty</button>
+    <button onclick="filterTournaments('standoff')">Standoff</button>
+    <button onclick="filterTournaments('cor')">Clash Royake</button>
+    <button onclick="filterTournaments('minecraft')">Minecraft</button>
+  </div>
+
+  <div class="tournament-grid">
+    <div class="tournament-card" data-game="pubg">
+      <h3>PUBG Mobile Cup</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 01.05.2025</p>
+      <p>Победитель: Team Alpha</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+    <div class="tournament-card" data-game="mlbb">
+      <h3>Dota 2 Spring Clash</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 15.04.2025</p>
+      <p>Победитель: Radiant Five</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+    <div class="tournament-card" data-game="hok">
+      <h3>Dota 2 Spring Clash</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 15.04.2025</p>
+      <p>Победитель: Radiant Five</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+
+    <div class="tournament-card" data-game="cor">
+      <h3>Dota 2 Spring Clash</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 15.04.2025</p>
+      <p>Победитель: Radiant Five</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+
+    <div class="tournament-card" data-game="cod">
+      <h3>Dota 2 Spring Clash</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 15.04.2025</p>
+      <p>Победитель: Radiant Five</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+
+    <div class="tournament-card" data-game="minecraft">
+      <h3>Dota 2 Spring Clash</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 15.04.2025</p>
+      <p>Победитель: Radiant Five</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+
+    <div class="tournament-card" data-game="pubg">
+      <h3>Dota 2 Spring Clash</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 15.04.2025</p>
+      <p>Победитель: Radiant Five</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+
+    <div class="tournament-card" data-game="mlbb">
+      <h3>Dota 2 Spring Clash</h3>
+      <img src="Photo/KCF-logo.jpg" class="icon-game" alt="">
+      <p>Дата: 15.04.2025</p>
+      <p>Победитель: Radiant Five</p>
+      <a href="#" class="past-tur" >Подробнее</a>
+    </div>
+
+
+  </div>
+</section>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-row">
+
+      <!-- Логотип -->
+      <div class="footer-logo">
+        <img src="Photo/KCF-logo.jpg" alt="KCF Логотип">
+        <span>KCF — Kyrgyz Cyber Federation</span>
+      </div>
+
+      <!-- Навигация -->
+      <div class="footer-links">
+        <a href="main.html">Главная</a>
+        <a href="news.html">Новости</a>
+        <a href="turnir.html">Турниры</a>
+        <a href="about.html">О нас</a>
+        <a href="rank.html">Рейтинг</a><br>
+        <a href="#">Стать партнёром</a>
+        <a href="#">Стать спонсором</a>
+      </div>
+
+      <!-- Контакты и соцсети -->
+      <div class="footer-contact">
+        <p>Связь: +996505055350  
+          <a href="mailto:ylaitegin.a@gmail.com">ylaitegin.a@gmail.com</a></p>
+        <div class="social-icons">
+          <a href="#"><img src="Photo/telegram.jpg" alt="Telegram"></a>
+          <a href="#"><img src="Photo/discord.jpg" alt="Discord"></a>
+          <a href="#"><img src="Photo/yotube.jpg" alt="YouTube"></a>
+          <a href="#"><img src="Photo/tiktok.jpg" alt="TikTok"></a>
+        </div>
+      </div>
+
+      <!-- Спонсоры -->
+      <div class="footer-sponsors">
+        <img src="Photo/sponsor1.png" alt="Спонсор 1">
+        <img src="Photo/sponsor2.png" alt="Спонсор 2">
+        <img src="Photo/sponsor3.png" alt="Спонсор 3">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  
+function filterTournaments(game) {
+  const cards = document.querySelectorAll(".tournament-card");
+  cards.forEach(card => {
+    const isMatch = game === "all" || card.dataset.game === game;
+    card.style.display = isMatch ? "block" : "none";
+  });
+}
+function showTab(tab) {
+  document.querySelectorAll(".rating-table").forEach(el => {
+    el.classList.remove("active");
+  });
+  document.getElementById(tab).classList.add("active");
+}
+</script>
+<script src="header.js"></script>
+<script src="rank.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+  body {
+  font-family: 'Rubik', sans-serif;
+  background: url(/news.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  line-height: 1.6;
+  margin: 0 5px;
+}
+
+.rating-section {
+  padding: 2rem;
+  color: #fff;
+  background-color: #1a1a1ae0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.rating-header {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.game-selector {
+  background: #2e2e2e;
+  color: #00ffe1;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+}
+
+.game-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2e2e2e;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.game-dropdown li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.game-dropdown li:hover {
+  background: #00ffe1;
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.tables-container th, .tables-container td {
+  border: 1px solid #444;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.tables-container th {
+  background: #00ffe1;
+  color: #000;
+}
+
+.tables-container tbody tr:nth-child(even) {
+  background: #2a2a2a;
+}
+/* Обертка для горизонтальной прокрутки таблиц */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 2rem;
+}
+
+.table-wrapper table {
+  min-width: 800px; /* Можно увеличить, чтобы точно вылезало за экран */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.past-tur{
+  color: #f63560;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .rating-section {
+    padding: 1rem;
+  }
+
+  .game-selector {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .game-dropdown {
+    width: 100%;
+  }
+
+  .tables-container table {
+    font-size: 0.85rem;
+  }
+
+  .tables-container th,
+  .tables-container td {
+    padding: 0.5rem;
+  }
+
+  .rating-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .arrow {
+    float: right;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Адаптация футера */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    margin-top: 1rem;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 0.25rem 0;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+  
+}

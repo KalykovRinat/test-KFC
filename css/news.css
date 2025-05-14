@@ -1,0 +1,137 @@
+:root {
+--main-red: #f63560;
+--yellow: #fbb30e ;
+--black: #4fc3f7 ;
+--white: #f2f2f2;
+--blue: #0d1b2a;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+  body {
+  font-family: 'Rubik', sans-serif;
+  background: url(/news.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white);
+  line-height: 1.6;
+  margin: 0 5px;
+}
+.news-section {
+  padding: 2rem;
+  background: #c8c0c346;
+  color: var(--black);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+.game-category {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.category-title {
+  font-size: 2rem;
+  color:#ffd700;
+  margin-bottom: 1rem;
+}
+
+.featured-post {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--blue);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.featured-post img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.featured-content {
+  padding: 1rem;
+  flex: 1;
+  color: var(--white);
+}
+
+.featured-content h3 {
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--main-red);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.news-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+.news-card h4{
+    color: var(--black);
+}
+.news-card {
+  min-width: 280px;
+  background: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+
+.news-card:hover {
+  transform: scale(1.03);
+}
+
+.news-card a {
+  color: var(--main-red);
+  text-decoration: underline;
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: var(--yellow);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.kategotya{
+  background: #0d1b2ac9;
+}
+.kategotya nav a{
+    color: #fcb606;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+  .featured-post {
+    flex-direction: column;
+  }
+
+  .featured-post img {
+    width: 100%;
+  }
+}
