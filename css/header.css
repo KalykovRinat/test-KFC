@@ -324,13 +324,9 @@ footer .social-icons img:hover {
 .footer-sponsors img {
   height: 40px;
   object-fit: contain;
-  filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
 
-.footer-sponsors img:hover {
-  filter: grayscale(0%);
-}
 .footer-container {
   width: 100%;
   max-width: 1400px;
